@@ -1,15 +1,51 @@
 [
 	{
 		"productImg": "img/product_1.jpg",
-		"productTitle": " dvsdvds",
-		"productInfo": " dvsdvds1",
-		"productPrice": " dvsdvds1"
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
 	},
 	{
 		"productImg": "img/product_2.jpg",
-		"productTitle": " dvsdvds",
-		"productInfo": " dvsdvds1",
-		"productPrice": " dvsdvds1"
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_3.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_4.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_5.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_6.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_2.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
+	},
+	{
+		"productImg": "img/product_1.jpg",
+		"productTitle": "Corona Chair",
+		"productInfo": "Printed evening dress with straight sleeves",
+		"productPrice": "$14.86"
 	}
 ]
 
