@@ -1,0 +1,183 @@
+.calculator {
+	background-color: @light-grey;
+	padding: 6% 0;
+	.calculator__box {
+		width: 100%;
+		border: 20px solid @peachy;
+		padding: 55px 80px 30px 50px;
+		text-align: left;
+		color: @brown;
+		margin-left: 30px;
+		.calculator__form {
+			.form__title {
+				font-size: 20px;
+				color:  @brown;
+				margin-bottom: 20px;
+			}
+			.form__select {
+				
+				.select {
+					margin-bottom: 20px;
+					height: 49px;
+					border: 1px solid @white;
+					border-radius: 5px;
+					box-shadow: inset 1px 2px 5px rgba(53,38,40,.27);
+					text-align-last: center;
+					text-align: center;
+					font-size: 16px;
+					color: @brown;
+				}
+			}
+			.checkboxes {
+				label {
+					display: inline-block;
+					padding: 3% 8%;
+					background-color: rgba(221,221,221,.39);
+					border-radius: 25px;
+					cursor: pointer;
+					text-align: center;
+					margin-bottom: 20px;
+					font-size: 16px;
+					color: #b1b1b1;
+				}
+				input[type=checkbox] {
+					display: none;
+					&:checked+label {
+						background-color: @peachy;
+						font-size: 16px;
+						color: @brown;
+					}
+				}
+			}
+			.input-form {
+				text-align: center;
+				width: 98px;
+				height:49px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: inset 1px 2px 5px rgba(53,38,40,.27);
+				box-shadow: inset 1px 2px 5px rgba(53,38,40,.27);
+				border: solid 1px #fcfaf5;
+				display: inline-block;
+				font-family: MullerLight,Arial,sans-serif;
+				font-size: 20px;
+				color: #352628;
+			}
+			.error {
+				    border: 2px solid #e61A32;
+			}
+			.area__label {
+				margin: 0;
+			}
+
+		}
+	}
+	.effect {
+		position:relative;
+		-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+		&:before, &:after
+		{
+			content:"";
+			position:absolute;
+			z-index:-1;
+			-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			box-shadow:0 0 20px rgba(0,0,0,0.8);
+			top:10px;
+			bottom:10px;
+			left:0;
+			right:0;
+			-moz-border-radius:100px / 10px;
+			border-radius:100px / 10px;
+		}
+		&:after
+		{
+			right:10px;
+			left:auto;
+			-webkit-transform:skew(8deg) rotate(3deg);
+			-moz-transform:skew(8deg) rotate(3deg);
+			-ms-transform:skew(8deg) rotate(3deg);
+			-o-transform:skew(8deg) rotate(3deg);
+			transform:skew(8deg) rotate(3deg);
+		}
+	}
+	.calculator__img-1 {
+		top: 31%;
+		left: -40%;
+		position: absolute;
+	}
+	.title__line {
+		position: relative;
+	}
+	.calculator__info {
+		display: flex;
+		justify-content: space-between;
+		height: 56%;
+		flex-direction: column;
+		.calculator__title {
+			height: 73%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			color: #352628;
+			&:before {
+				content: '';
+				display: block;
+				width: 56px;
+				height: 8px;
+				background-color: @peachy;
+				position: absolute;
+				left: -84px;
+				top: 30px;
+			}
+
+
+			.calculator__main-title {
+				font-size: 52px;
+				.calculator__main-title--bold {
+					font-weight: 900;
+					font-family: Arial;
+				}
+			}
+
+		}
+
+		.calculator__btn {
+			background-color: transparent;
+			border: none;
+			text-decoration: none;
+			outline: none;
+			display: inline-block;
+			padding: 15px 30px;
+			margin: 10px 20px;
+			border-radius: 30px;
+			box-shadow: 0 0 40px 40px @peachy inset, 0px 1px 44px -10px rgb(57,47,52);
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			letter-spacing: 2px;
+			color: white;
+			transition: .15s ease-in-out;
+
+			&:hover {
+				box-shadow: 0 0 10px 0 @peachy inset, 0 0 10px 4px @peachy;
+				color: @peachy;
+
+			}
+		}
+		.result {
+			padding: 4% 0;
+			width: 92%;
+			display: flex;
+			justify-content: center;
+			border-radius: 5px;
+			box-shadow: inset 0px 0px 4px rgba(53, 38, 40, 0.27);
+			border: solid 1px #fcfaf5;
+			font-size: 14px;
+			color: #352628;
+		}
+	}
+
+}

@@ -1,0 +1,78 @@
+.why-us {
+	background: @black;
+	padding: 5% 0;
+	.why-us__title {
+		.title;
+		.why-us__text {
+			color: @peachy;
+		}
+		.why-us__line {
+			border-top: 1px solid @white;
+		}
+	}
+	.why-us__info {
+		.row {
+			align-items: center;
+			margin: 0 0 43px 0;
+			.why-us__column-title {
+				color: @peachy;
+				font-size: 17px;
+				font-weight: 600;
+				letter-spacing: 4px;
+				margin-bottom: 16px;
+				text-transform: uppercase;
+			}
+			.why-us__column-description{
+				font-size: 12px;
+				line-height: 2;
+			}
+			.why-us__icon {
+				background: url('../img/css_sprites.png');
+				cursor: pointer;
+			}
+			.why-us__column-first {
+				align-items: flex-start;
+				.why-us__icon-design {
+					background-position: -97px -199px;
+					height: 71px;
+					width: 69px; 
+					&:hover {
+						background-position: -186px -199px;
+					}
+				}
+				.why-us__icon-quality {
+					background-position: -135px -10px;
+					height: 68px;
+					width: 97px; 
+					&:hover {
+						background-position: -18px -10px;
+					}
+				}
+			}
+			.why-us__image-main {
+				.why-us__img {
+					max-width: 100%;
+				}
+			}
+			.why-us__column-last {
+				align-items: flex-start;
+				.why-us__icon-price {
+					background-position: -244px -10px;
+					height: 81px;
+					width: 67px;
+					&:hover {
+						background-position: -10px -199px;
+					}
+				}
+				.why-us__icon-support {
+					background-position: -100px -98px;
+					height: 81px;
+					width: 70px;
+					&:hover {
+						background-position: -10px -98px;
+					}
+				}
+			}
+		}
+	}
+}

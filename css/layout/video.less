@@ -1,0 +1,144 @@
+.video {
+	background: url(../img/video-bg.jpg);
+	
+	.video__text {
+
+	}
+	.video__ipad {
+		.filings {
+			.video__img-filings--right {
+
+			}
+		}
+		.video__ipad-img {
+		
+		}
+		.video__play {
+			.play__descr {
+				font-size: 1rem;
+    line-height: 1.2;
+    &:before {
+    content: '';
+    position: absolute;
+    bottom: 1.125rem;
+    left: 6.4375rem;
+    -webkit-transform: rotate(-38deg);
+    -ms-transform: rotate(-38deg);
+    transform: rotate(-38deg);
+    display: block;
+    width: 3.75rem;
+    height: 1px;
+    background-color: @peachy;
+}
+&:after {
+    content: '';
+    display: block;
+    width: 5.875rem;
+    height: 1px;
+    background-color: @peachy;
+}
+    .span__play {
+
+    }
+			}
+		}
+	}
+	.slider-nav {
+	padding-top: 4%;
+	width: 40%;
+	height: 200px;
+	outline: none;
+}
+.slider__img {
+	width: 80%;
+	height: 200px;
+	background: grey;
+	opacity: 0.5;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.slick-center img {
+	max-width:230px; 
+	z-index: 2;
+	height: 100%;
+	opacity: 1;
+}
+.slick-center { padding-top:0; }
+
+
+
+.play__link {
+    display: block;
+    position: absolute;
+    width: .875rem;
+    height: 1.125rem;
+    left: 13.4375rem;
+    top: -.375rem;
+}
+.play__circle {
+    display: block;
+    position: absolute;
+    top: -2.4375rem;
+    left: -2.625rem;
+    width: 5.8125rem;
+    height: 5.8125rem;
+    border-radius: 100%;
+    border: 2px solid rgba(255,255,255,.4);
+    border-left-color: rgba(255,255,255,.1);
+    border-top-color: rgba(255,255,255,.1);
+    transform: rotate(-45deg);
+    animation: loaderleft 10s linear infinite;
+} 
+@keyframes spinloader{
+	0%{
+		transform:rotate(0deg)
+	}
+
+	100%{
+		transform:rotate(360deg)
+	}
+}
+@keyframes loaderleft{
+	100%{
+		transform:rotate(0deg)
+	}
+
+	0%{
+		transform:rotate(360deg)
+	}
+}
+.play__circle-orange {
+    margin-left: 9.0625rem;
+    margin-top: -7.5rem;
+    border-width: 8px;
+    border-color: @peachy;
+    border-style: solid;
+    width: 8.625rem;
+    height: 8.625rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    position: absolute;
+    right: -3.75rem;
+    top: 3.625rem;
+    -webkit-animation: spinloader 8s line;
+    animation: spinloader 8s linear infinite;
+}
+.circle__inner {
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    right: -3.3125rem;
+    top: -3.5rem;
+    border-color: rgba(255,255,255,.2);
+    border-style: solid;
+    width: 7.8125rem;
+    height: 7.8125rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+}

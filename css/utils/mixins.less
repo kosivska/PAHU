@@ -1,0 +1,70 @@
+.header-slider-arrow {
+	border-bottom: 3px solid @white;
+	border-left: 3px solid @white;
+	content: "";
+	display: block;
+	height: 14px;
+	width: 14px;
+}
+
+.title {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5%;
+	&__text {
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+	.underline {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			.line {
+				margin: 10px;
+				opacity: 0.7;
+			}
+			.rhomb {
+				background: @peachy;
+				height: 7px;
+				transform: rotate(45deg);
+				width: 7px;
+			}	
+	}
+}
+
+.icons {
+	align-items: center;
+		display: flex;
+		justify-content: space-around;
+		.icon {
+			background: url('../img/css_sprites.png');
+			cursor: pointer;
+		}
+		.icon__search {
+			background-position: -291px -111px;
+			height: 19px;
+			width: 19px;
+			&:hover {
+				background-position: -291px -150px;
+			}
+		}
+		.icon__like {
+			background-position: -190px -137px;
+			height: 19px;
+			width: 21px; 
+			&:hover {
+				background-position: -190px -98px;
+			}
+		}
+		.icon__cart {
+			background-position: -244px -150px;
+			height: 19px;
+			width: 27px; 
+			&:hover {
+				background-position: -244px -111px;
+			}
+		}
+}
