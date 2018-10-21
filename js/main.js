@@ -89,7 +89,7 @@ $(document).ready(function(){
 
 let source = $('#product-template').html();
 let template = Handlebars.compile(source);
-$.get('./data/products.json').then(function(products) {
+$.get('./js/data/products.json').then(function(products) {
 	let htmlOutput = template(products);
 	$('.js-products').html(htmlOutput);
 });
