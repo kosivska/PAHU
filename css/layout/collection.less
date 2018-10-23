@@ -31,6 +31,9 @@
 					align-items: center;
 					display: flex;
 					height: 257px;
+					@media screen and (max-width: 430px) {
+				        height: 208px;
+			}
 					.product__img {
 						width: 100%;
 					}
@@ -44,13 +47,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 430px) {
+				        height: 118px;
+			}
 					.product__title {
 						font-size: 17px;
 						font-weight: 600;
 						text-transform: uppercase;
+						 @media screen and (max-width: 430px) {
+				        font-size: 16px;
+			}
 					}
 					.product__info {
 						font-size: 12px;
+						 @media screen and (max-width: 430px) {
+				        font-size: 13px;
+			}
 					}
 					.product__price {
 						    margin-bottom: 13%;
