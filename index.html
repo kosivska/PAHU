@@ -7,19 +7,26 @@
 	<link rel="icon" href="img/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="body">
 	<!-- Header -->
 	<header class="header" id="search">
 		<div class="container">
 			<div class="row m-0">
-				<div class="header__logo col-1 col-sm-3 col-lg-2">
+				<div class="header__logo col-6 col-sm-6 col-md-4 col-lg-2">
 					<img class="logo__img" src="img/logo.png" alt="logo_PAHU">
 				</div>
-				<nav class="header__nav col-8 col-sm-7 col-lg-6 offset-lg-1 p-0">
+				<nav class="header__nav col-2 col-sm-1 col-md-1 col-lg-6 p-0 offset-4 offset-md-1 offset-lg-1 order-md-3 order-lg-2">
+					<div class="menu__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 					<ul class="nav__list">
 						<li class="nav__item">
 							<a class="nav__item-link" href="#home">Home</a>
@@ -44,7 +51,7 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="header_icons col-2 offset-lg-1">
+				<div class="header_icons col-2 col-md-3 col-lg-2 offset-md-3 offset-lg-1 order-lg-3">
 					<div class="icon icon__search"></div>
 					<div class="icon icon__like"></div>
 					<div class="icon icon__cart"></div>
@@ -93,8 +100,8 @@
 		<div class="container">
 			<div class="row m-0">
 				<div class="col-md-12 why-us__title">
-					<h1 class="title__text why-us__text m-0">Why choose us</h1>
-					<div class="underline col-8">
+					<h1 class="title__text why-us__text col-12 col-md-8 m-0">Why choose us</h1>
+					<div class="underline col-12 col-md-8">
 						<div class="line why-us__line col-3"></div>
 						<div class="rhomb"></div>
 						<div class="line why-us__line col-3"></div>
@@ -110,12 +117,12 @@
 								</div>
 								<div class="why-us__icon why-us__icon-design col-md-3 order-md-2 order-1"></div>
 							</div>
-							<div class="row col-md-12 why-us__column-first m-0">
-								<div class="col-md-9 why-us__column-first-info">
+							<div class="row col-md-12 why-us__column-first">
+								<div class="col-md-9 why-us__column-first-info order-2">
 									<h2 class="text-md-right why-us__column-title">Unique Quality</h2>
 									<p class="text-md-right why-us__column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								</div>
-								<div class="why-us__icon why-us__icon-quality col-md-3"></div>
+								<div class="why-us__icon why-us__icon-quality col-md-3 order-md-2 order-1"></div>
 							</div>
 						</div>
 
@@ -132,7 +139,7 @@
 								</div>
 							</div>
 
-							<div class="row col-md-12 why-us__column-last m-0">
+							<div class="row col-md-12 why-us__column-last m-0 order-md-2 order-1">
 								<div class="why-us__icon why-us__icon-support col-md-3"></div>
 								<div class="col-md-9 why-us__column-last-info">
 									<h2 class="text-md-left why-us__column-title">Great Support</h2>
@@ -377,20 +384,20 @@
 						</form>
 					</div>
 					<div class="calculator__img-1">
-						<img class="icon-1" src="img/strujka2.png"  alt="filings">
+						<img class="icon-1" src="img/filings2.png"  alt="filings">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 col-12">
 					<div class="calculator__img-2">
-						<img src="img/stujka1.png"  alt="filings">
+						<img src="img/filings1.png"  alt="filings">
 					</div>
 					<div class="offset-3 col-8 calculator__info">
 
-						<div class="calculator__title title__line">
-							<h2 class="calculator__main-title">Calculate<span class="calculator__main-title--bold"> the cost </span>of your design</h2>
+						<div class="calculator__title title__line title">
+							<h2 class="calculator__main-title main-title">Calculate<span class="calculator__main-title--bold main-title--bold"> the cost </span>of your design</h2>
 							<div class="descr__title result js-result">Enter data to pre-calculate the cost </div>	
 						</div>
-						<button class="calculator__btn">
+						<button class="calculator__btn btn">
 							Calculate the cost
 						</button>
 
@@ -414,46 +421,49 @@
 	<!-- Video -->
 	<section class="video">
 
-		<div class="container">
+		<div class="container p-0">
 			<div class="row">
-				<div class="video__text col-md-6 col-sm-5 col-12">
-					<div class="scene">
-						<img class="video__img-filings--left" src="img/strujka2.png" alt="filings">
-					</div>
-					<div class="video__title title__line">
-						<h2 class="video__title-text">We design<span class="video__title-text--bold">for you individually<br></span>
+				<div class="scene">
+					<img class="video__img-filings--left" src="img/filings2.png" alt="filings">
+				</div>
+				<div class="filings">
+					<img class="video__img-filings--right" src="img/filings1.png" alt="filings">
+				</div>
+				<div class="video__text col-md-4 col-sm-6 col-12">
+					
+					<div class="video__title title__line title">
+						<h2 class="video__title-text main-title">We design<span class="video__title-text--bold main-title--bold"> for you individually</span>
 						</h2>
 						<p class="video__title-descr">For this leave a request</p>	
 					</div>
 
-					<button class="video__btn">
-						Submit your application
+					<button class="video__btn popup-form btn">
+						Submit your request
 					</button>
 
 				</div>
-				<div class="video__ipad col-md-6 col-sm-7 col-12">
-					<div class="filings">
-						<img class="video__img-filings--right" src="img/stujka1.png" alt="filings">
-					</div>
+				<div class="video__ipad col-md-7 col-sm-6 col-12 p-0">
+					
 					<div class="video__ipad-img">
 						<img src="img/ipad.png" alt="ipad">
-					</div>
-					<div class="video__play col-md-4 col-sm-5 col-xs-12">
-						<div class="play__descr">
-							Look video
-							<span class="span__play"> about company
-							</span>
+						<div class="video__play col-md-4 col-sm-5 col-xs-12">
+							<div class="play__descr">
+								Look video
+								<span class="span__play"> about company
+								</span>
+							</div>
+
+							<a href="#" class="play__link popup-youtube">
+								<i class="fas fa-play"></i>
+								<span class="play__circle"></span>
+								<span class="play__circle-orange"></span>
+								<span class="circle__inner"></span>		
+							</a>
+
+
 						</div>
-
-						<a href="https://www.youtube.com/watch?v=PvtILsWMmw4" class="play__link popup-youtube">
-							<i class="fas fa-play"></i>
-							<span class="play__circle"></span>
-							<span class="play__circle-orange"></span>
-							<span class="circle__inner"></span>		
-						</a>
-						
-
 					</div>
+					
 
 
 				</div>
@@ -464,13 +474,132 @@
 		</div>
 	</section>
 	<!-- Video End-->
+	<!-- Social -->
+	<!-- <section class="social">
+		<h2 class="social__title"><span class="social__title--peachy">Get </span>in touch</h2>
+		<div class="social__icons">
+			<i class="fab fa-facebook-f social__icon"></i>
+			<i class="fab fa-google-plus-g social__icon"></i>
+			<i class="fab fa-vk social__icon"></i>
+			<i class="fab fa-youtube social__icon"></i>
+			<i class="fab fa-linkedin-in social__icon"></i>
+			<i class="fab fa-digg social__icon"></i>
+			<i class="fab fa-xing social__icon"></i>
+		</div>
+	</section> -->
+	<!-- Social End-->
+
 
 	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="contacts col-12 ">
+					<div class="row contacts--flex">
+						<div class="row contacts__block col-3">
+							<i class="far fa-envelope-open contacts_icon col-2 email"></i>
+							
+							<div class="col-5"><a class="contacts__text" href="mailto:kosivska@ukr.net?subject=Design">
+								<h3 class="contacts__name-block">Email</h3>
+								<p class="contacts__info-block">mail@ukr.net</p>
+								<p class="contacts__info-block">mail@ukr.net</p>
+							</a>
+						</div>
 
-	<!-- Our Designer -->
-	<!-- Our Designer End-->
-	<!-- Our Designer -->
-	<!-- Our Designer End-->
+					</div>
+					<div class="row contacts__block col-3">
+
+						<i class="fas fa-mobile-alt contacts_icon col-2"></i>
+
+
+						<div class="col-6">
+							<a class="contacts__text" href="tel:+380930983647">
+								<h3 class="contacts__name-block">Call Us!</h3>
+								<p class="contacts__info-block">093 035 98 92</p>
+								<p class="contacts__info-block">097 931 82 53</p>
+							</a>
+
+
+						</div>
+
+					</div>
+					<div class="row contacts__block col-3">
+
+						<i class="fas fa-map-marker-alt contacts_icon col-2"></i>
+
+						<div class="contacts__text js-btn-map col-8">
+							<h3 class="contacts__name-block">Address</h3>
+							<p class="contacts__info-block">123, Main Road, New City,</p>
+							<p class="contacts__info-block">My Country 123456</p>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="footer__triangle">
+					<p class="footer__author">Designed By Kosivska</p>
+					<p class="footer__copyright">copyright 2018</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- Footer End-->
+
+<!-- Our Designer -->
+<!-- Our Designer End-->
+
+<!-- Modal Dialog Video -->
+<div class="dialog-video">
+	<button class="close"></button>
+	<video class="video-player">
+		<source src="video/aboutCompany.mp4">
+		</video>
+	</div>
+	<!-- Modal Dialog Video End-->
+
+
+
+	<!-- Modal Dialog Form -->
+	<div class="dialog-form">
+		<div class="row">
+			<button class="close"></button>
+			<div class="modal__form col-md-6 col-sm-6 col-12">
+				<div class="modal__form-box">
+					<form class="form-callback js-form-validate">
+						<div class="form-callback__title">Your name
+						</div>
+						<input class="js-input-form form-callback__input" type="name" name="name" placeholder="Batman" required>
+						<div class="form-callback__title">Phone number</div>
+						<input class="js-input-form form-callback__input" type="phone" name="phone" placeholder="+38(___)___-__-__" required>
+						<button type="submit" class="modal__form-btn">Submit</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<div class="form-callback__main-title">
+					<h2 class="form-callback__title-text">Submit your<span class="form-callback__title-text--bold"> request</span></h2>
+					<div class="form-callback__title-info">After submitting, our manager will contact you to clarify your order.
+					</div>	
+					<div class="form-callback__img"><img src="img/modal.png" alt="filings"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Dialog Form End-->
+	<!-- Success Modal Dialog Form End-->
+	<div class="success"><span>Thanks for the request!</span></div>
+	<!-- Success Modal Dialog Form End-->
+
+	<!-- Modal Dialog Map -->
+	<div class="dialog-map">
+		<button class="close"></button>
+		
+	</div>
+	<!-- Modal Dialog Video Map-->
 
 	<!-- Handlebars templates-->
 	<script id="product-template" type="text/x-handlebars-template">
@@ -494,13 +623,15 @@
 		{{/each}}
 	</script>
 	<!-- Handlebars templates End-->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
 	<script src="js/handlebars-v4.0.12.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/main.js"></script>
 
 

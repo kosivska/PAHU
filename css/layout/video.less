@@ -1,19 +1,42 @@
 .video {
 	background: url(../img/video-bg.jpg);
+	padding: 6% 0 0 0;
+	overflow: hidden;
+	position: relative;
+	.row {
+		justify-content: space-between;
+.scene {
+	    top: 38%;
+    left: -5%;
+    position: absolute;
+}
+.filings {
+			.video__img-filings--right {
+position: absolute;
+    right: -2%;
+    top: -9%;
+			}
+		}
 	
 	.video__text {
+		    margin-left: 6rem;
+    margin-top: 7rem;
+		color: @white;
+		.title-video-calculator;
 
 	}
 	.video__ipad {
-		.filings {
-			.video__img-filings--right {
-
-			}
-		}
-		.video__ipad-img {
 		
-		}
+		.video__ipad-img {
+			position: relative;
+			    margin-bottom: -1%;
+    max-width: 100%;
 		.video__play {
+			    padding-right: 22px;
+    padding-left: 0px;
+			    position: absolute;
+    top: 17rem;
+    left: 9rem;
 			.play__descr {
 				font-size: 1rem;
     line-height: 1.2;
@@ -33,15 +56,28 @@
 &:after {
     content: '';
     display: block;
-    width: 5.875rem;
+    width: 6.875rem;
     height: 1px;
     background-color: @peachy;
 }
     .span__play {
-
+font-weight: bold;
     }
 			}
+			.play__link {
+    display: block;
+    position: absolute;
+    width: .875rem;
+    height: 1.125rem;
+    left: 13.4375rem;
+    top: -.375rem;
+    .fa-play {
+    	color: @peachy;
+    }
+}
 		}
+		}
+		
 	}
 	.slider-nav {
 	padding-top: 4%;
@@ -67,14 +103,7 @@
 
 
 
-.play__link {
-    display: block;
-    position: absolute;
-    width: .875rem;
-    height: 1.125rem;
-    left: 13.4375rem;
-    top: -.375rem;
-}
+
 .play__circle {
     display: block;
     position: absolute;
@@ -140,5 +169,6 @@
     height: 7.8125rem;
     -webkit-border-radius: 100%;
     border-radius: 100%;
+}
 }
 }

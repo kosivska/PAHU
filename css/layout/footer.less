@@ -1,0 +1,75 @@
+.footer {
+	background-color: #2F2F2F;
+	    padding: 4rem 0 16rem 0;
+    overflow: hidden;
+	.contacts {
+		.contacts--flex {
+			justify-content: center;
+		.contacts__block {
+
+
+			.contacts_icon {
+				&:before {
+					font-size: 2rem;
+color: @peachy; 
+
+				}
+
+			}
+			.email {
+				margin-right: 14px;
+			}
+			.contacts__text {
+				    text-decoration: none;
+    color: white;
+				display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    cursor: pointer;
+    -moz-transition: opacity 0.2s 0.02s ease;
+ -o-transition: opacity 0.2s 0.02s ease;
+ -webkit-transition: opacity 0.2s 0.02s ease;
+&:hover {
+	opacity: 0.5;
+}
+
+				.contacts__name-block {
+    text-transform: uppercase;
+	margin-bottom: 3%;
+
+				}
+				.contacts__info-block {
+    font-size: 0.72rem;
+				}
+			}
+
+		}
+		
+
+		}
+	.footer__triangle {
+position: absolute;
+    border-bottom: 1rem solid @peachy;
+    border-left: 1rem solid @peachy;
+    transform: rotate(135deg);
+    width: 18rem;
+    height: 18rem;
+    top: 11rem;
+    left: 25rem;
+    .footer__author {
+    	    top: 11.6rem;
+    left: -0.6rem;
+    position: absolute;
+    transform: rotate(-135deg);
+    }
+    .footer__copyright {
+    	text-transform: uppercase;
+    position: absolute;
+    transform: rotate(-135deg);
+    top: 10.5rem;
+    left: 1.8rem;
+    }
+		}
+	}
+}

@@ -1,5 +1,6 @@
 .banner {
 	background: @grey;
+	overflow: hidden;
 	.grid {
 		width: 100%;
 		.banner__text-main {
@@ -12,7 +13,7 @@
 		}
 	}
 	.banner__img {
-		width: 100%;
+		width: 102%;
 	}
 	.banner__text {
 		left: 6%;
@@ -21,18 +22,33 @@
 		text-transform: uppercase;
 		width: 193px;
 		top: 12%;
+		@media screen and (max-width: 430px) {
+				width: 31%;
+			}
 		.banner__title {
 			font-size: 28px;
 			font-weight: 600;
 			margin-bottom: 24px;
+			@media screen and (max-width: 430px) {
+				font-size: 6px;
+				margin-bottom: 8px;
+			}
 		}
 		.banner__details {
 			font-size: 12px;
 			margin-left: 5px;
+			@media screen and (max-width: 430px) {
+				font-size: 5px;
+			margin-left: 0px;
+			}
 			&:after {
 				content: "\2192";
 				font-size: 14px;
 				margin-left: 8px;
+				@media screen and (max-width: 430px) {
+				font-size: 7px;
+				margin-left: px;
+			}
 			}
 			.banner__link {
 				color: inherit;

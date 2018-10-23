@@ -4,7 +4,16 @@
 	.why-us__title {
 		.title;
 		.why-us__text {
+			text-align: center;
 			color: @peachy;
+			@media screen and (max-width: 430px) {
+				    font-size: 20px;
+			}
+		}
+		.underline {
+			@media screen and (max-width: 430px) {
+				        margin-bottom: -8%;
+			}
 		}
 		.why-us__line {
 			border-top: 1px solid @white;
@@ -29,8 +38,11 @@
 			.why-us__icon {
 				background: url('../img/css_sprites.png');
 				cursor: pointer;
+				    margin-bottom: 20px;
 			}
 			.why-us__column-first {
+				text-align: center;
+    justify-content: center;
 				align-items: flex-start;
 				.why-us__icon-design {
 					background-position: -97px -199px;
@@ -55,6 +67,8 @@
 				}
 			}
 			.why-us__column-last {
+				text-align: center;
+    justify-content: center;
 				align-items: flex-start;
 				.why-us__icon-price {
 					background-position: -244px -10px;
