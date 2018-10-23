@@ -148,7 +148,7 @@ $(document).ready(function() {
 	$formBtn.click(function(e) {
 		e.preventDefault();
 		$dialogForm.dialog({
-			width: '55rem',
+			width: '66%',
 			beforeClose: function() {
 				$('body').removeClass('scroll-frozen');
 			},
