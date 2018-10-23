@@ -17,8 +17,10 @@
 				background-color: @white;
 				display: grid;
 				grid-template-columns: 100%;
-				grid-template-rows: 69% 31%;
 				margin: 0 2% 2% 2%;
+				@media screen and (max-width: 430px) {
+				        margin: 0 2% 4% 2%;
+			}
 				&:hover {
 					cursor: pointer;
     transform: scale(1.05);
@@ -38,6 +40,10 @@
 				}
 				.product__description {
 					color: @brown;
+					    height: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 					.product__title {
 						font-size: 17px;
 						font-weight: 600;
@@ -47,6 +53,7 @@
 						font-size: 12px;
 					}
 					.product__price {
+						    margin-bottom: 13%;
 						font-weight: 600;
 					}
 				}
