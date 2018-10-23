@@ -22,8 +22,14 @@
 		text-transform: uppercase;
 		width: 193px;
 		top: 12%;
-		@media screen and (max-width: 430px) {
+		@media screen and (max-width: 372px) {
 				width: 31%;
+			}
+			@media (min-width: 373px) and (max-width: 430px) {
+				width: 38%;
+			}
+			@media (min-width: 431px) and (max-width: 700px) {
+				width: 58%;
 			}
 		.banner__title {
 			font-size: 28px;
@@ -33,6 +39,10 @@
 				font-size: 6px;
 				margin-bottom: 8px;
 			}
+			@media (min-width: 431px) and (max-width: 700px) {
+				font-size: 13px;
+				margin-bottom: 43px;
+			}
 		}
 		.banner__details {
 			font-size: 12px;
@@ -40,6 +50,10 @@
 			@media screen and (max-width: 430px) {
 				font-size: 5px;
 			margin-left: 0px;
+			}
+			@media (min-width: 431px) and (max-width: 700px) {
+				font-size: 9px;
+				margin-bottom: 0px;
 			}
 			&:after {
 				content: "\2192";
