@@ -1,6 +1,9 @@
 .collection {
 	background-color: @light-grey;
 	padding: 6% 0;
+	@media screen and (max-width: 430px) {
+			padding: 9% 0;
+			}
 	.row {
 		justify-content: center;
 		.collection__title {
@@ -59,7 +62,7 @@
 			}
 					}
 					.product__info {
-						font-size: 12px;
+						font-size: 13px;
 						 @media screen and (max-width: 570px) {
 				        font-size: 11px;
 			}
@@ -83,6 +86,9 @@
 						padding: 6px 11px;
 						width: 123px;
 						.icons;
+						@media screen and (max-width: 570px) {
+				        width: 107px;
+			}
 					}
 					&:hover {
 						opacity: 0.6;
