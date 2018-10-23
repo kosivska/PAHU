@@ -9,6 +9,7 @@
 	.project__content {
 		.project__title {
 			.title;
+			margin-bottom: 5%;
 			.project__text {
 				color: @brown;
 			}
@@ -45,6 +46,11 @@ font-weight: 600;
     letter-spacing: 4px;
     line-height: 13px;
 			}
+			@media (min-width: 490px) and (max-width: 660px) {
+				font-size: 19px;
+    left: 12%;
+    line-height: 25px;
+			}
 					}
 					.project-slider__title {
 
@@ -59,6 +65,11 @@ font-size: 16px;
 				font-size: 7px;
 				left: -59%;
 				line-height: 10px;
+			}
+			 @media (min-width: 490px) and (max-width: 660px) {
+				top: 63%;
+				font-size: 15px;
+				left: -44%;
 			}
 					}
 				}
@@ -101,31 +112,23 @@ font-size: 16px;
 .project-slider__arrow--right {
 	
 	right: 3%;
+	@media screen and (max-width: 430px) {
+				 right: 1%;
+			}
 	&:after {
 		.header-slider-arrow;
 		margin: 40% 32%;
 		transform: rotate(-135deg);
-		
+		@media screen and (max-width: 430px){
+    margin: 30% 26%;
+}
 	}
 }
 
 
 
 }
-@media screen and (max-width: 430px){
-	.project .project-slider__arrow--right:after {
-    margin: 30% 26%;
-}
 
 
-.project .project-slider__arrow--left:after {
-    height: 13px;
-    width: 13px;
-        margin: 32% 37%;
-}
-.project .project-slider__arrow--right:after {
-    height: 13px;
-    width: 13px;
-        margin: 30% 26%;
-}
-}
+
+
