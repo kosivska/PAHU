@@ -9,37 +9,63 @@
 	    top: 38%;
     left: -5%;
     position: absolute;
+    @media screen and (max-width: 430px) {
+             display: none;
+
+    }
 }
 .filings {
 			.video__img-filings--right {
 position: absolute;
     right: -2%;
     top: -9%;
+      
 			}
 		}
 	
 	.video__text {
+            height: 100%;
 		    margin-left: 6rem;
     margin-top: 7rem;
 		color: @white;
 		.title-video-calculator;
 
+        @media screen and (max-width: 430px) {
+             margin-top: 3rem;
+              margin-left: 0rem;
+              margin-right: 2rem;
+
 	}
+}
 	.video__ipad {
+        @media screen and (max-width: 430px) {
+             margin-left: 1rem;
+
+    }
 		
 		.video__ipad-img {
 			position: relative;
 			    margin-bottom: -1%;
-    max-width: 100%;
+    .ipad-img {
+        max-width: 100%;
+    }
 		.video__play {
 			    padding-right: 22px;
     padding-left: 0px;
 			    position: absolute;
     top: 17rem;
     left: 9rem;
+    @media screen and (max-width: 430px) {
+             margin-left: 1rem;
+top: 11rem;
+    left: -2rem;
+    }
 			.play__descr {
 				font-size: 1rem;
     line-height: 1.2;
+    @media screen and (max-width: 430px) {
+             display: none;
+    }
     &:before {
     content: '';
     position: absolute;
@@ -170,5 +196,8 @@ font-weight: bold;
     -webkit-border-radius: 100%;
     border-radius: 100%;
 }
+
+
 }
 }
+

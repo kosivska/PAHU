@@ -2,6 +2,9 @@
 	background-color: @light-grey;
 	padding: 6% 0;
 	overflow: hidden;
+	.row {
+		    align-items: flex-start;
+	}
 	.calculator__box {
 		width: 100%;
 		border: 20px solid @peachy;
@@ -129,8 +132,9 @@
 		position: relative;
 	}
 	.calculator__img-2  {
+		    position: absolute;
+    top: -57%;
 		@media screen and (max-width: 430px) {
-			position: absolute;
 			top: -44%;
 			left: -8%;
 		}
@@ -156,6 +160,7 @@
 			}
 		}
 		.result {
+			text-align: center;
 			padding: 4% 0;
 			width: 92%;
 			display: flex;
