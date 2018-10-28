@@ -32,8 +32,8 @@ $(document).ready(function() {
 		slide: '.main-slider__slide',
 		prevArrow: ".main-slider__arrow--left",
 		nextArrow: ".main-slider__arrow--right",
-		// autoplay: true,
-		// autoplaySpeed: 3000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		dots: false,
 		infinite: true,
 	});
@@ -106,7 +106,7 @@ $(document).ready(function() {
 	$videoPlay.click(function(e) {
 		e.preventDefault();
 		$dialogVideo.dialog({
-			width: '55rem',
+			width: '66%',
 			modal: true,
 			closeOnEscape: true,
 			beforeClose: function() {
