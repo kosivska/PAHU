@@ -193,7 +193,7 @@ $(document).ready(function() {
 			$('.dialog-form').dialog('destroy');
 			clearFormFields($form);
 			$dialogSuccess.dialog({
-				width: '45rem',
+				width: '55%',
 				modal: true,
 				open: function(event, ui) {
 					setTimeout(function() {
@@ -237,39 +237,5 @@ $(document).ready(function() {
 		});
 	}
 
-	let $mapBtn = $('.js-btn-map');
-	let $dialogMap = $('.dialog-map');
-	$mapBtn.click(function(e) {
-		e.preventDefault();
-		$dialogMap.dialog({
-			width: '55rem',
-			beforeClose: function() {
-				$('body').removeClass('scroll-frozen');
-			},
-			modal: true,
-			closeOnEscape: true,
-			open: function(event, ui) {
-				$('body').addClass('scroll-frozen');
-				$('.ui-widget-overlay').on('click', function() {
-					$dialogMap.dialog('close');
-				});
-			},
-			show: {
-				effect: "fade",
-				duration: 500
-			},
-			hide: {
-				effect: "fade",
-				duration: 500
-			}
-			
-
-		});
-
-
-		$('.close').on('click', function() {
-			$dialogMap.dialog('close');
-		});
-		$(".ui-dialog-titlebar").hide();
-	});
+	
 });
