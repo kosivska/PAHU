@@ -2,9 +2,15 @@
 	background-color: #2F2F2F;
 	    padding: 4rem 0 16rem 0;
     overflow: hidden;
+    @media screen and (max-width: 999px) {
+				padding: 2rem 0 7rem 0;
+			}
 	.contacts {
 		.contacts--flex {
 			justify-content: center;
+			 @media screen and (max-width: 999px) {
+				justify-content: space-around;
+			}
 		.contacts__block {
 
 
@@ -12,7 +18,9 @@
 				&:before {
 					font-size: 2rem;
 color: @peachy; 
-
+ @media screen and (max-width: 999px) {
+				font-size: 1.2rem;
+			}
 				}
 
 			}
@@ -30,6 +38,9 @@ color: @peachy;
     -moz-transition: opacity 0.2s 0.02s ease;
  -o-transition: opacity 0.2s 0.02s ease;
  -webkit-transition: opacity 0.2s 0.02s ease;
+ @media screen and (max-width: 999px) {
+				height: 48px;
+			}
 &:hover {
 	opacity: 0.5;
 }
@@ -37,10 +48,16 @@ color: @peachy;
 				.contacts__name-block {
     text-transform: uppercase;
 	margin-bottom: 3%;
+	 @media screen and (max-width: 999px) {
+				font-size: 10px;
+			}
 
 				}
 				.contacts__info-block {
     font-size: 0.72rem;
+    @media screen and (max-width: 999px) {
+				font-size: 0.62rem;
+			}
 				}
 			}
 
@@ -57,11 +74,24 @@ position: absolute;
     height: 18rem;
     top: 11rem;
     left: 25rem;
+    @media screen and (max-width: 999px) {
+				 width: 16rem;
+    height: 18rem;
+    top: 7rem;
+    left: 4.7rem;
+			}
     .footer__author {
     	    top: 11.6rem;
     left: -0.6rem;
     position: absolute;
     transform: rotate(-135deg);
+     @media screen and (max-width: 999px) {
+				font-size: 10px;
+    width: 23%;
+    top: 14rem;
+    text-align: center;
+    left: 0.3rem;
+			}
     }
     .footer__copyright {
     	text-transform: uppercase;
